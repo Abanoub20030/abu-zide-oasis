@@ -1,0 +1,218 @@
+.contact {
+  background: linear-gradient(135deg, #1e3b7238, #2a5298);
+  padding: 40px 20px;
+  position: relative;
+  color: #fff;
+  max-width: 2000px;
+  margin: 0 auto;
+  padding: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+
+
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+  gap: 30px;
+  position: relative;
+  max-width: 2000px;
+
+  margin: 0 auto;
+
+  box-sizing: border-box;
+
+
+}
+
+.phone {
+  text-align: right;
+}
+
+.phone h2 {
+  color: #ffd66b;
+  font-family: 'Gill Sans', 'Trebuchet MS', sans-serif;
+  margin-bottom: 10px;
+  transition: 0.3s ease;
+
+}
+
+.phone h2:hover {
+  color: #ecd6a3;
+  transform: scale(1.03);
+}
+
+.phone p {
+  margin: 5px 0;
+  font-size: 18px;
+  transition: transform 0.3s ease, color 0.3s ease;
+
+
+}
+
+.phone p:hover {
+  color: #ecd6a3;
+  transform: translateX(5px);
+}
+
+.phone a {
+  color: #fafafa;
+  font-size: 20px;
+  transition: transform 0.3s ease, color 0.3s ease;
+  text-decoration: none;
+}
+
+.phone a:hover {
+  transform: scale(1.2);
+  color: #ffd66b;
+}
+
+.link {
+  text-align: center;
+}
+
+.link a {
+  display: inline-block;
+  color: #fcf6f6;
+  font-size: 22px;
+  margin: 10px;
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.link a:hover {
+  transform: scale(1.2);
+  color: #ffd66b;
+}
+
+.btn-wifi {
+  background-color: #00bcd4;
+  color: white !important;
+  padding: 8px 16px;
+  border-radius: 30px;
+  font-weight: bold;
+  display: inline-block;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.btn-wifi:hover {
+  background-color: #0097a7;
+  transform: scale(1.1);
+}
+
+
+.btn-tiktok {
+  background: linear-gradient(135deg, #000000, #ff0050, #00f2ea);
+
+  color: white !important;
+  padding: 8px 16px;
+  border-radius: 30px;
+  font-weight: bold;
+  display: inline-block;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.btn-tiktok:hover {
+  filter: brightness(1.2);
+  transform: scale(1.1);
+}
+
+
+.btn-facebook {
+  background-color: #1877f2;
+
+  color: white !important;
+  padding: 8px 16px;
+  border-radius: 30px;
+  font-weight: bold;
+  display: inline-block;
+  transition: 0.3s;
+  text-decoration: none;
+
+}
+
+.btn-facebook:hover {
+  background-color: #145dbf;
+
+  transform: scale(1.1);
+}
+
+
+.btn-whatsap {
+  background-color: #25d366;
+  color: white !important;
+  padding: 8px 16px;
+  border-radius: 30px;
+  font-weight: bold;
+  display: inline-block;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.btn-whatsap:hover {
+  background-color: #1ebc5b;
+  transform: scale(1.1);
+}
+
+.loction {
+  text-align: left;
+}
+
+.loction h2 {
+  color: #ffd66b;
+  font-family: 'Gill Sans', 'Trebuchet MS', sans-serif;
+  margin-bottom: 10px;
+  transition: 0.3s ease;
+  font-size: 25px;
+}
+
+.loction h2:hover {
+  transform: scale(1.1) translateX(5px);
+  color: #ebe6dc;
+}
+
+.loction a {
+  color: white;
+  font-size: 20px;
+  margin-top: 10px;
+  display: inline-block;
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.loction a:hover {
+  transform: scale(1.1);
+  color: #ffd66b;
+}
+
+#map {
+  border-radius: 15px;
+  height: 200px;
+  width: 250px;
+  margin-top: 10px;
+}
+
+.img-footer {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  right: 0;
+  margin: 0;
+
+  transform: translateX(-160%);
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
+  transition: transform 0.6s ease;
+  z-index: 1000;
+  flex-wrap: wrap;
+}
+
+.img-footer:hover {
+  transform: translateX(-50%) rotate(360deg);
+}

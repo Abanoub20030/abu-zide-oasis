@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name="description" content="واحة ابو زيد - أفضل العروض والمأكولات والمشروبات في بورسعيد" />
+  <title>واحة ابو زيد </title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <!-- icon -->
+  <link rel="stylesheet" href="libarary/bootstrap-icons-1.11.3/font/bootstrap-icons.css">
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="libarary/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+  <!-- style.css -->
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="content-header.css">
+  <link rel="stylesheet" href="offers.css">
+  <link rel="stylesheet" href="birthday.css">
+  <link rel="stylesheet" href="trips.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="madiqrury.css">
+  <!-- App Link لفيسبوك -->
+  <meta property="al:ios:url" content="fb://profile" />
+  <meta property="al:ios:app_store_id" content="284882215" />
+  <meta property="al:ios:app_name" content="Facebook" />
+  <meta property="al:android:url" content="fb://profile" />
+  <meta property="al:android:package" content="com.facebook.katana" />
+  <meta property="al:android:app_name" content="Facebook" />
+  <!-- location -->
+  <!-- <link rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin=""/> -->
+</head>
+
+<body>
+  <!-- background-video -->
+  <div class="video-continer" id="home">
+
+    <video class="video-slide" src="vido/Generated File August 03, 2025 - 1_31PM.mp4" width="100%" height="100%"
+      autoplay muted loop playsinline webkit-playsinline></video>
+
+    <video class="video-slide" src="vido/5230240-uhd_3840_2160_30fps.mp4" width="100%" height="100%" autoplay muted loop
+      playsinline webkit-playsinline></video>
+  </div>
+
+  <!--imglogo&linkfacebook&textlogo  -->
+  <header class="navbar" id="navbar">
+    <!-- logo-conent -->
+    <div class="logo-container">
+      <a href="https://www.facebook.com/profile.php?id=61560734332926">
+        <img class="logoimg" src="img/447250100_122094214532357811_4710111656786463263_n.jpg" width="120px"
+          height="150px" alt="logo">
+      </a>
+      <h3 class="textlogo">واحة ابو زيد </h3>
+    </div>
+    <!-- navbar-conent -->
+    <div class="nav">
+      <a href="#home">الرئسية</a>
+      <a href="#" onclick="likeAndOpenMenu()">مينو</a>
+      <a href="#offers">العروض</a>
+      <a href="#birthday"> اعياد الميلاد</a>
+      <a href="#Trips">الرحلات</a>
+      <a href="#contact">تواصل معنا</a>
+    </div>
+
+    <!-- navbar-left -->
+    <div class="nav_bar" onclick="toggleSidebar()">☰</div>
+    <div id="slider">
+      <span class="close_btn" onclick="toggleSidebar()">✖</span>
+      <form class="d-flex" id="search" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+        <button class="btn btn-outline-primary" type="submit"><i class="bi bi-search"></i></button>
+      </form>
+      <div id="content-form" class="content-form">
+        <h4>menu</h4>
+        <div id="content-menu" class="content-menu">
+
+          <a class="btn-menu" href="oasismenu.html#HotDrinks"> HotDrinks</a>
+          <a class="btn-menu" href="oasismenu.html#Juices"> Juices</a>
+          <a class="btn-menu" href="oasismenu.html#Cocktails"> Cocktails</a>
+          <a class="btn-menu" href="oasismenu.html#Casta"> Casta</a>
+          <a class="btn-menu" href="oasismenu.html#Soda"> Soda</a>
+          <a class="btn-menu" href="oasismenu.html#Milkshakes"> Milkshakes</a>
+          <a class="btn-menu" href="oasismenu.html#FizzyDrinks"> FizzyDrinks</a>
+          <a class="btn-menu" href="oasismenu.html#Yogurt"> Yogurt</a>
+          <a class="btn-menu" href="oasismenu.html#IcedCoffee"> IcedCoffee</a>
+          <a class="btn-menu" href="oasismenu.html#WinterDrinks"> WinterDrinks</a>
+          <a class="btn-menu" href="oasismenu.html#Desserts"> candies</a>
+          <a class="btn-menu" href="food.html" target="_blank"> Food</a>
+          <a class="btn-menu" href="">About us</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!--the introduction  -->
+  <div id="the-introduction" class="the-introduction">
+
+    <!--text-navbar  -->
+    <h1 class="glow-text">Welcome to Abu Zaid Oasis</h1>
+
+    <!-- content-header&menu&wifi&contentfacebook -->
+    <div class="link1">
+      <!--CUBS-BTN-FOLLOW & LIKE -->
+      <button class="btn-cube" id="addCube">متابعة</button>
+      <div id="zone"></div>
+      <div class="sdk-wrapper0">
+
+        <div class="sdk-wrapper">
+          <button class="sdk" onclick="startRedirect()">
+            منيو واحة ابو زيد
+          </button>
+        </div>
+
+        <div class="sdk-wrapper2">
+          <button class="sdk2" onclick="startRedirect1()">
+            password-wifi
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- massage-button -->
+    <div class="warning">
+      <div id="message">
+        <div class="ex">
+          <i class="bi bi-x-lg"></i><i class="bi bi-x-lg"></i><i class="bi bi-x-lg"></i>
+          برجاء الضغط على زر الفولو لعمل متابعة لصفحتنا لفتح منيو واحة أبو زيد
+        </div>
+      </div>
+
+      <div id="message1">
+        <div class="ex1">
+          <i class="bi bi-x-lg"></i> <i class="bi bi-x-lg"></i> <i class="bi bi-x-lg"></i>
+          برجاء الضغط على زر الفولو لعمل متابعة لصفحتنا لفتح واى فاى واحة أبو زيد
+        </div>
+      </div>
+
+      <div class="arrow-icon" id="arrow" style="display: none;">
+        <i class="bi bi-arrow-up"></i>
+        <i class="bi bi-arrow-up"></i>
+        <i class="bi bi-arrow-up"></i>
+      </div>
+    </div>
+    <!-- marquee-menu -->
+    <div class="marquee">
+      <div class="marquee-content">
+        شاى25
+        شاى نكهات 30
+        شاى حليب 30
+        براد شاى 2 فرد 60
+        كرك 2فرد 70
+        قهوة تركى 35
+        قهوة دبل 50
+        قهوة فرنساوى 45
+        اسبريسو 40
+        اسبريسو دبل 60
+        اينسون 30
+        نعناع 30
+        كركرية 30
+        قهوة بندق 50
+        نسكافية 55
+        نسكافية فلفر 65
+        كابتشينو 55
+        كابتشينو بندق 65
+        كابتشينو كراميل 65
+        كابتشينو فانليا 65
+        ميكاتو 45
+        قهوة شوكلاتة 55
+        قهوة كراميل 55
+        كوفى ميكس 30
+        كوفى ميكس حليب 40
+        لاتية 60
+        لاتية بندق 70
+        لاتية كراميل 70
+        لاتية فسدق 70
+        لاتية فانليا 70
+        روشية 85
+        لوتس 85
+        امريكان 60
+        قهوة وايت 65
+        ابل سيذر 45
+        قرفة بالين 45
+        هوت شوكلت 60
+        هوت شوكلت وايت 75
+        هوت شوكلت فسدق 85
+        هوت شوكلت روشية 85
+        موكا 75
+        سحلب 65
+        سحلب نوتيلا 85
+        بليلة 60
+        حمص شام 65
+        اسم الصنف سعر البيع
+        مانجو 70
+        فراولة 60
+        جوافة 60
+        كيوى 75
+        لمون 45
+        لمون نعناع 45
+        بطيخ 50
+        موز بالبن 60
+        اناناس 85
+        كيوى مانجو 80
+        فراولة بالحليب 65
+        جوافة حليب 65
+        جوافة نعناع 65
+        افوكادو عسل 100
+        افوكادو عسل مكسرات 130
+        افوكادو مانجو 120
+        فلوريدا 75
+        اورينتال 90
+        ابوزيد 90
+        كاساتا كلاسيك 45
+        كاساتا ارويو 65
+        كاساتا ميكس شوكلت 65
+        كاساتا لوتس 85
+        كاساتا فواكة 110
+        كاساتا نوتيلا 85
+        بلوبيرى 55
+        كيوى 75
+        لمون 50
+        لمون نعناع 50
+        فراولة 60
+        مانجا 70
+        بطيخ 50
+        جيلى كولا 55
+        ميكس بيرى 50
+        بينا كولادا 60
+        راس بيرى 50
+        اناناس 75
+        جيلى كولا 55
+        موخيتو 60
+        بنا كولادا 65
+        بلوبيرى 55
+        كولا فانليا 60
+        سوكتش مينت 50
+        سان رايز 50
+        اناناس 60
+        الواحة 80
+        كيوى تفاح 60
+        ميكس بيرى 55
+        كولا بيرى 65
+        بنا ستروبرى 70
+        بلو تشك 70
+        كاساتا كلاسيك 45
+        كاساتا ارويو 65
+        كاساتا ميكس شوكلت 65 الكاساتا
+        كاساتا لوتس 85
+        كاساتا فواكة 110
+        كاساتا نوتيلا 85
+        بلوبيرى 55
+        كيوى 75
+        لمون 50
+        لمون نعناع 50
+        فراولة 60
+        مانجا 70
+        بطيخ 50
+        جيلى كولا 55
+        ميكس بيرى 50
+        بينا كولادا 60
+        راس بيرى 50
+        اناناس 75
+        جيلى كولا 55
+        موخيتو 60
+        بنا كولادا 65
+        بلوبيرى 55
+        كولا فانليا 60
+        سوكتش مينت 50
+        سان رايز 50
+        اناناس 60
+        الواحة 80
+        كيوى تفاح 60
+        ميكس بيرى 55
+        كولا بيرى 65
+        بنا ستروبرى 70
+        بلو تشك 70
+      </div>
+    </div>
+    <!-- the introduction -->
+
+  </div>
+  <!-- offers -->
+  <section class="section" id="offers">
+    <header class="zoom-item">
+      <div class="brand">
+        <img class="logo" src="img/447250100_122094214532357811_4710111656786463263_n.jpg" alt="logo">
+        <div>
+          <h1>واحة أبو زيد — عروض اليوم</h1>
+          <div style="font-size:13px;color:var(--muted)">الصفحة الرئيسية • أفضل العروض اليومية</div>
+        </div>
+      </div>
+      <div class="notice">🔥 أكثر من <strong id="totalOrders">50</strong> طلب هذا اليوم — اطلب الآن! </div>
+      <div class="mark1">
+        <marquee class="mark1" direction="right" scrollamount="5" style="font-size:18px; color:#333;">
+          🔥 أكثر من 50 عميل طلبوا اليوم – اطلب أنت كمان!
+        </marquee>
+      </div>
+    </header>
+
+    <marquee behavior="scroll" direction="left" scrollamount="25" onmouseover="this.stop();" onmouseout="this.start();">
+      <div id="slides-container" class="slider">
+        <div class="slide-track">
+          <div class="slide">
+            <img src="img/1.png" alt="عرض 1">
+            <div class="info">
+              <h3> عرض الاسبوع 3 فطار شرقى عليهم 1 فطار شرقى مجانا</h3>
+              <p>السعر: 300 ج</p>
+              <p>الطلبات: 32</p>
+              <div class="rating" data-product="بيتزا مارجريتا">
+                <span class="star" tabindex="0">★</span>
+                <span class="star" tabindex="0">★</span>
+                <span class="star" tabindex="0">★</span>
+                <span class="star" tabindex="0">★</span>
+                <span class="star" tabindex="0">★</span>
+              </div>
+              <div class="rating-info"></div>
+              <a class="order-btn" data-phone="201283122800" data-message="هتطلب كام عرض ؟
+   استلام ولا دلفيرى؟
+   العنوان؟
+   طريقة الدفع كاش ولا تحويل؟
+   طرق الدفع المتاحة (فوادافون كام -اورنج كاش- انستاباى)
+   ارقام التحويل فوافون كاش
+   (01030488833-01030088310)
+   ارقام التحويل انستا باى
+   (01008128695-01207528237)
+   ارقام التحويل اورنج كاش
+   (01207528237)
+   صور من التحويل " target="_blank">
+                اطلب الان
+              </a>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="img/5.png" alt="عرض 1">
+            <div class="info">
+              <h3> عرض الاسبوع 2 تشيز كيك علهم 1 صودا من اخيارك مجانا</h3>
+              <p>السعر: 199 ج</p>
+              <p>الطلبات: 70</p>
+              <div class="rating" data-product="بيتزا مارجريتا">
+                <span class="star" tabindex="0">★</span>
+                <span class="star" tabindex="0">★</span>
+                <span class="star" tabindex="0">★</span>
+                <span class="star" tabindex="0">★</span>
+                <span class="star" tabindex="0">★</span>
+              </div>
+              <div class="rating-info"></div>
+              <a class="order-btn" data-phone="201283122800" data-message="هتطلب كام عرض ؟
+   استلام ولا دلفيرى؟
+   العنوان؟
+   طريقة الدفع كاش ولا تحويل؟
+   طرق الدفع المتاحة (فوادافون كام -اورنج كاش- انستاباى)
+   ارقام التحويل فوافون كاش
+   (01030488833-01030088310)
+   ارقام التحويل انستا باى
+   (01008128695-01207528237)
+   ارقام التحويل اورنج كاش
+   (01207528237)
+   صور من التحويل " target="_blank">
+                اطلب الان
+              </a>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="img/2.png" alt="عرض 2">
+            <div class="info">
+              <h3>عرض الاسبوع 3 بيتزا عليهم 1 بيتزا مجانا</h3>
+              <p>السعر: 660 ج</p>
+              <p>الطلبات: 28</p>
+              <div class="rating" data-product="بيتزا مارجريتا">
+                <span class="star" tabindex="0">★</span>
+                <span class="star" tabindex="0">★</span>
+                <span class="star" tabindex="0">★</span>
+                <span class="star" tabindex="0">★</span>
+                <span class="star" tabindex="0">★</span>
+              </div>
+              <div class="rating-info"></div>
+              <a class="order-btn" data-phone="201283122800" data-message="هتطلب كام عرض ؟
+   استلام ولا دلفيرى؟
+   العنوان؟
+   طريقة الدفع كاش ولا تحويل؟
+   طرق الدفع المتاحة (فوادافون كام -اورنج كاش- انستاباى)
+   ارقام التحويل فوافون كاش
+   (01030488833-01030088310)
+   ارقام التحويل انستا باى
+   (01008128695-01207528237)
+   ارقام التحويل اورنج كاش
+   (01207528237)
+   صور من التحويل " target="_blank">
+                اطلب الان
+              </a>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="img/3.png" alt="عرض 3">
+            <div class="info">
+              <h3>عرض السبوع 3 فطار فلاحى عليهم1 فطار فلاحى مجانا </h3>
+              <p>السعر: 300 ج</p>
+              <p>الطلبات: 44</p>
+              <div class="rating" data-product="بيتزا مارجريتا">
+                <span class="star" tabindex="0">★</span>
+                <span class="star" tabindex="0">★</span>
+                <span class="star" tabindex="0">★</span>
+                <span class="star" tabindex="0">★</span>
+                <span class="star" tabindex="0">★</span>
+              </div>
+              <div class="rating-info"></div>
+              <a class="order-btn" data-phone="201283122800" data-message="هتطلب كام عرض ؟
+   استلام ولا دلفيرى؟
+   العنوان؟
+   طريقة الدفع كاش ولا تحويل؟
+   طرق الدفع المتاحة (فوادافون كام -اورنج كاش- انستاباى)
+   ارقام التحويل فوافون كاش
+   (01030488833-01030088310)
+   ارقام التحويل انستا باى
+   (01008128695-01207528237)
+   ارقام التحويل اورنج كاش
+   (01207528237)
+   صور من التحويل " target="_blank">
+                اطلب الان
+              </a>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="img/5.png" alt="عرض 1">
+            <div class="info">
+              <h3> عرض الاسبوع 4 وافل نوتلا عليهم 1 بان كيك من اخيارك مجانا</h3>
+              <p>السعر: 399 ج</p>
+              <p>الطلبات: 52</p>
+              <div class="rating" data-product="بيتزا مارجريتا">
+                <span class="star" tabindex="0">★</span>
+                <span class="star" tabindex="0">★</span>
+                <span class="star" tabindex="0">★</span>
+                <span class="star" tabindex="0">★</span>
+                <span class="star" tabindex="0">★</span>
+              </div>
+              <div class="rating-info"></div>
+              <a class="order-btn" data-phone="201283122800" data-message="هتطلب كام عرض ؟
+   استلام ولا دلفيرى؟
+   العنوان؟
+   طريقة الدفع كاش ولا تحويل؟
+   طرق الدفع المتاحة (فوادافون كام -اورنج كاش- انستاباى)
+   ارقام التحويل فوافون كاش
+   (01030488833-01030088310)
+   ارقام التحويل انستا باى
+   (01008128695-01207528237)
+   ارقام التحويل اورنج كاش
+   (01207528237)
+   صور من التحويل " target="_blank">
+                اطلب الان
+              </a>
+            </div>
+          </div>
+
+          <div class="slide">
+            <img src="img/8.png" alt="عرض 4">
+            <div class="info">
+              <h3>عرض الاسبوع 2 بيتزا + 2 ساندوتش عليهم 1 بيتزا مجانا </h3>
+              <p>السعر: 640 ج</p>
+              <p>الطلبات: 18</p>
+              <div class="rating" data-product="بيتزا مارجريتا">
+                <span class="star" tabindex="0">★</span>
+                <span class="star" tabindex="0">★</span>
+                <span class="star" tabindex="0">★</span>
+                <span class="star" tabindex="0">★</span>
+                <span class="star" tabindex="0">★</span>
+              </div>
+              <div class="rating-info"></div>
+              <a class="order-btn" data-phone="201283122800" data-message="هتطلب كام عرض ؟
+   استلام ولا دلفيرى؟
+   العنوان؟
+   طريقة الدفع كاش ولا تحويل؟
+   طرق الدفع المتاحة (فوادافون كام -اورنج كاش- انستاباى)
+   ارقام التحويل فوافون كاش
+   (01030488833-01030088310)
+   ارقام التحويل انستا باى
+   (01008128695-01207528237)
+   ارقام التحويل اورنج كاش
+   (01207528237)
+   صور من التحويل " target="_blank">
+                اطلب الان
+              </a>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="img/6.png" alt="عرض 4">
+            <div class="info">
+              <h3>عرض الاسبوع 3 مولتن كيك عليهم 1 مولتن كيك ايس مجانا </h3>
+              <p>السعر: 420 ج</p>
+              <p>الطلبات: 34</p>
+              <div class="rating" data-product="بيتزا مارجريتا">
+                <span class="star" tabindex="0">★</span>
+                <span class="star" tabindex="0">★</span>
+                <span class="star" tabindex="0">★</span>
+                <span class="star" tabindex="0">★</span>
+                <span class="star" tabindex="0">★</span>
+              </div>
+              <div class="rating-info"></div>
+              <a class="order-btn" data-phone="201283122800" data-message="هتطلب كام عرض ؟
+   استلام ولا دلفيرى؟
+   العنوان؟
+   طريقة الدفع كاش ولا تحويل؟
+   طرق الدفع المتاحة (فوادافون كام -اورنج كاش- انستاباى)
+   ارقام التحويل فوافون كاش
+   (01030488833-01030088310)
+   ارقام التحويل انستا باى
+   (01008128695-01207528237)
+   ارقام التحويل اورنج كاش
+   (01207528237)
+   صور من التحويل " target="_blank">
+                اطلب الان
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </marquee>
+  </section>
+  <!--birthday-->
+  <section class="section" id="birthday">
+
+    <!-- <div class="video-card">
+      <video src="vido/Generated File August 23, 2025 - 3_33PM happy1.mp4" width="80%" height="80%" autoplay muted
+        loop></video>
+      <div class="card-text">
+        <h2>احجز الان عيد ميلادك ف واحة ابو زيد باسعار مميزة وخدمات رائعة </h2>
+      </div>
+    </div>
+
+
+    <div class="video-card">
+      <video src="vido/Generated File August 23, 2025 - 3_33PM happy1.mp4" width="80%" height="80%" autoplay muted
+        loop></video>
+      <div class="card-text">
+        <h2>احجز الان عيد ميلادك ف واحة ابو زيد باسعار مميزة وخدمات رائعة </h2>
+      </div>
+    </div>
+
+
+    <div class="video-card">
+      <video src="vido/Generated File August 23, 2025 - 3_33PM happy1.mp4" width="80%" height="80%" autoplay muted
+        loop></video>
+      <div class="card-text">
+        <h2>احجز الان عيد ميلادك ف واحة ابو زيد باسعار مميزة وخدمات رائعة </h2>
+      </div>
+    </div>
+
+
+    <div class="video-card">
+      <video src="vido/Generated File August 23, 2025 - 3_33PM happy1.mp4" width="80%" height="80%" autoplay muted
+        loop></video>
+      <div class="card-text">
+        <h2>احجز الان عيد ميلادك ف واحة ابو زيد باسعار مميزة وخدمات رائعة </h2>
+      </div>
+    </div>
+
+
+    <div class="video-card">
+      <video src="vido/Generated File August 23, 2025 - 3_33PM happy1.mp4" width="80%" height="80%" autoplay muted
+        loop></video>
+      <div class="card-text">
+        <h2>احجز الان عيد ميلادك ف واحة ابو زيد باسعار مميزة وخدمات رائعة </h2>
+      </div>
+    </div>
+
+    <div class="video-card">
+      <video src="vido/Generated File August 23, 2025 - 3_33PM happy1.mp4" width="80%" height="80%" autoplay muted
+        loop></video>
+      <div class="card-text">
+        <h2>احجز الان عيد ميلادك ف واحة ابو زيد باسعار مميزة وخدمات رائعة </h2>
+      </div>
+    </div>
+
+
+    <div class="video-card">
+      <video src="vido/Generated File August 23, 2025 - 3_33PM happy1.mp4" width="80%" height="80%" autoplay muted
+        loop></video>
+      <div class="card-text">
+        <h2>احجز الان عيد ميلادك ف واحة ابو زيد باسعار مميزة وخدمات رائعة </h2>
+      </div>
+    </div>
+
+    <div class="video-card">
+      <video src="vido/Generated File August 23, 2025 - 3_33PM happy1.mp4" width="80%" height="80%" autoplay muted
+        loop></video>
+      <div class="card-text">
+        <h2>احجز الان عيد ميلادك ف واحة ابو زيد باسعار مميزة وخدمات رائعة </h2>
+      </div>
+    </div>
+
+    <div class="video-card">
+      <video src="vido/Generated File August 23, 2025 - 3_33PM happy1.mp4" width="80%" height="80%" autoplay muted
+        loop></video>
+      <div class="card-text">
+        <h2>احجز الان عيد ميلادك ف واحة ابو زيد باسعار مميزة وخدمات رائعة </h2>
+      </div>
+    </div> -->
+    <div class="container">
+      <div data-text="زيد" style="--r:-15;" class="glass">
+        <img src="img/img5.jpg" width="100%" height="100%" alt="">
+      </div>
+      <div data-text="ابو" style="--r:5;" class="glass">
+        <video autoplay muted loop playsinline webkit-playsinline width="100%" height="100%">
+          <source src="vido/Generated File August 23, 2025 - 3_33PM happy1.mp4">
+        </video>
+      </div>
+      <div data-text="واحة" style="--r:25;" class="glass">
+        <img src="img/img6.jpg" width="100%" height="100%" alt="">
+      </div>
+    </div>
+    <!-- 2 -->
+    <div class="container">
+      <div data-text="زيد" style="--r:-15;" class="glass">
+        <img src="img/img2.jpg" width="100%" height="100%" alt="">
+      </div>
+      <div data-text="ابو" style="--r:5;" class="glass">
+        <video autoplay muted loop playsinline webkit-playsinline width="100%" height="100%">
+          <source src="vido/Generated File August 23, 2025 - 3_33PM happy1.mp4">
+        </video>
+      </div>
+      <div data-text="واحة" style="--r:25;" class="glass">
+        <img src="img/img1.jpg" width="100%" height="100%" alt="">
+      </div>
+    </div>
+    <div class="tranfer">
+
+
+      <div class="calculator">
+        <h2 class="People">How much is the total? </h2>
+        <input type="number" id="numberInput" placeholder="   ادخل عدد الفراد ">
+        <br>
+        <button id="button-people" onclick="calculatebirthdayTotal()">Total</button>
+        <div class="result" id="result"></div>
+      </div>
+
+      <div class="clilck-button">
+        <a class="btn-happy" data-phone="201283122800" data-message="كم عدد الافراد؟
+  عيد الميلاد موافق يوم كام D/MM/yyy?
+    مكان الحجز فين ف الكافية؟
+    " target="_blank"> احجز الان </a>
+      </div>
+      <!-- tranfer -->
+    </div>
+    <!-- birthday -->
+    <div class="marquee-box">
+      <div class="marquee-text"> Abu Zaid Oasis, happy birthday</div>
+    </div>
+  </section>
+
+  <!-- Trips -->
+  <section id="Trips" class="Trips">
+
+    <div class="head-trips">
+      <h1 class="title-trips">Welcome to Abu Zaid Beach</h1>
+      <p class="pragraph-trips">
+        أنظمة وبرامج الرحلات للأفراد والمجموعات السياحية على البيتش
+      </p>
+
+
+      <div id="seistems0" class="seistems01">
+
+
+        <div class="seistem1">
+          <h2 class="h2-total"> نظام (1) للرحلات الى اقل من 25 فرد </h2>
+
+          <input class="inbut30" type="number" id="input1_1" placeholder="ادخل عدد افراد رحلتك ">
+          <div class="result" id="result1_1">الناتج الأول: </div>
+
+          <input class="inbut80" type="number" id="input2_1" placeholder="أدخل عدد الشماسى">
+          <div class="result" id="result2_1">الناتج الثاني: </div>
+
+          <br>
+          <button class="btn-total" onclick="calculateTotal('1')">احسب الإجمالي</button>
+          <div class="result" id="finalResult_1">الإجمالي: </div>
+        </div>
+
+
+        <div class="seistem2">
+          <h2 class="h2-total"> نظام (2) للرحلات الى اكثر من 33 فرد </h2>
+
+          <input class="inbut30" type="number" id="input1_2" placeholder="ادخل عدد افراد رحلتك ">
+          <div class="result" id="result1_2">الناتج الأول: </div>
+
+          <input class="inbut80" type="number" id="input2_2" placeholder="أدخل عدد الشماسى">
+          <div class="result" id="result2_2">الناتج الثاني: </div>
+
+          <br>
+          <button class="btn-total" onclick="calculateTotal('2')">احسب الإجمالي</button>
+          <div class="result" id="finalResult_2">الإجمالي: </div>
+        </div>
+
+
+        <div class="seistem3">
+          <h2 class="h2-total"> نظام (3) للرحلات الى اكثر من 50 فرد </h2>
+
+          <input class="inbut30" type="number" id="input1_3" placeholder="ادخل عدد افراد رحلتك ">
+          <div class="result" id="result1_3">الناتج الأول: </div>
+
+          <input class="inbut80" type="number" id="input2_3" placeholder="أدخل عدد الشماسى">
+          <div class="result" id="result2_3">الناتج الثاني: </div>
+
+          <br>
+          <button class="btn-total" onclick="calculateTotal('3')">احسب الإجمالي</button>
+          <div class="result" id="finalResult_3">الإجمالي: </div>
+        </div>
+
+
+        <div class="seistem4">
+          <h2 class="h2-total"> نظام (4) للرحلات الى اكثر من 100 فرد </h2>
+
+          <input class="inbut30" type="number" id="input1_4" placeholder="ادخل عدد افراد رحلتك ">
+          <div class="result" id="result1_4">الناتج الأول: </div>
+
+          <input class="inbut80" type="number" id="input2_4" placeholder="أدخل عدد الشماسى">
+          <div class="result" id="result2_4">الناتج الثاني: </div>
+
+          <br>
+          <button class="btn-total" onclick="calculateTotal('4')">احسب الإجمالي</button>
+          <div class="result" id="finalResult_4">الإجمالي: </div>
+        </div>
+
+      </div>
+
+      <a class="btn-happy-trips" data-phone="201283122800" data-message="كم عدد افراد رحلتك؟
+   الرحلة موافق يوم كام D/MM/yyy?
+ " target="_blank"> احجز رحلتك الان </a>
+    </div>
+  </section>
+
+
+
+  <!-- footer -->
+  <footer id="contact" class="contact">
+    <div class="footer">
+      <div class="phone">
+        <h2>تواصل معنا</h2>
+        <a href="#"><i class="bi bi-telephone"> phone</i></a>
+        <p>01000668619</p>
+        <p>01283122800</p>
+        <p>01207528237</p>
+      </div>
+      <div class="link">
+        <a class="btn-tiktok" href="#"><i class="bi bi-tiktok"> tiktok</i></a>
+        <a class="btn-facebook " href="https://www.facebook.com/profile.php?id=61560734332926" target="_blank">
+          <i class="bi bi-facebook"> facebook</i></a>
+        <a class="btn-whatsap" data-phone="201283122800" data-message="السلام عليكم عايز اعرف العروض" target="_blank">
+          <i class="bi bi-whatsapp">whatsapp</i></a>
+        <a class="btn-wifi" href="passwordwifi.html" target="_blank"><i class="bi bi-wifi"> wifi</i></a>
+      </div>
+      <div class="loction">
+        <h2>متلفش كتير من هنا هتوصل أسرع</h2>
+        <a href="https://maps.app.goo.gl/5Nb64nmSbYFEMabv5" target="_blank">
+          <i class="bi bi-geo-alt"> location</i>
+          <br>
+        </a>
+        <div id="map">
+          <iframe width="100%" height="100%" style="border:0;" loading="lazy" allowfullscreen
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=31.2725885,32.3168738&z=15&output=embed">
+          </iframe>
+        </div>
+      </div>
+      <img class="img-footer" src="img/447250100_122094214532357811_4710111656786463263_n.jpg" width="120" height="120"
+        alt="">
+    </div>
+  </footer>
+  <!-- scroll -->
+  <button id="scrollTopBtn">↑</button>
+  <!--*********************************************** End ******************************************** -->
+
+  <!-- SDK عادي goood -->
+  <!-- <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" 
+        src="https://connect.facebook.net/ar_AR/sdk.js#xfbml=1&version=v17.0">
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function(){
+    // 60000 = دقيقة واحدة (60 ثانية)
+    setTimeout(function(){
+      if(/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)){
+        // لو الزائر من موبايل يفتح التطبيق
+        window.location.href = "fb://page/61560734332926";
+      } else {
+        // لو الزائر من كمبيوتر يفتح المتصفح
+        window.location.href = "https://www.facebook.com/61560734332926";
+      }
+    }, 7200000); 
+  });
+</script> -->
+  <!-- *********************** -->
+  <!-- </script>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" 
+        src="https://connect.facebook.net/ar_AR/sdk.js#xfbml=1&version=v17.0">
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function(){
+    setTimeout(function(){
+      if(/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)){
+        window.location.href = "fb://page/61560734332926";
+      } else {
+        window.location.href = "https://www.facebook.com/61560734332926";
+      }
+    }, 600000); 
+  });
+</script> -->
+  <!-- 00000000000000000 -->
+  <!-- <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" 
+        src="https://connect.facebook.net/ar_AR/sdk.js#xfbml=1&version=v17.0">
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function(){
+    setTimeout(function(){
+      let frame = document.getElementById("fb-frame");
+      if(!frame || frame.innerHTML.trim() === ""){
+        if(/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)){
+          window.location.href = "fb://page/61560734332926";
+        } else {
+          window.location.href = "https://www.facebook.com/61560734332926";
+        }
+      }
+   }) }, 5000000); 
+</script>  -->
+  <!-- 000000000000000000000000000 -->
+  <!-- loction -->
+  <!-- <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+          integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+          crossorigin=""></script>
+  <script>
+    const lat = 31.2725885, lng = 32.3168738; // مكانك
+    const map = L.map('map').setView([lat, lng], 16);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19, attribution: '&copy; OpenStreetMap'
+    }).addTo(map);
+    L.marker([lat, lng]).addTo(map).bindPopup('موقعك هنا').openPopup();
+  </script> -->
+  <!-- فيس بوك -->
+  <!-- <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous"
+    src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v18.0&appId=710069751897798" nonce="xyz"></script> -->
+  <!--bootsrap-->
+
+  <script src="libarary/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+  <script src='min.js'></script>
+</body>
+
+</html>

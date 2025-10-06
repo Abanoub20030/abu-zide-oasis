@@ -1,0 +1,207 @@
+  .Trips {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+
+
+
+
+  .head-trips {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .title-trips {
+    color: #15c8e88a;
+    font-size: 55px;
+    flex-wrap: wrap;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+
+  }
+
+  .pragraph-trips {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    font-size: 22px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-shadow: 5px 1px 0 rgba(123, 122, 119, 0.327);
+  }
+
+  .btn-happy-trips {
+    bottom: 20px;
+    position: sticky;
+    align-items: center;
+    max-width: 250px;
+    padding: 10px 20px;
+    background-color: #efeded;
+    color: #1707fd;
+    font-size: 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  /* TOTALE */
+  .seistems01 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+    gap: 10px;
+    border: none;
+    padding: 5px;
+    box-sizing: border-box;
+  }
+
+  .seistems01>div {
+    width: 23%;
+
+    min-width: 250px;
+
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+
+  .seistem1 {
+    width: 20%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    z-index: 999;
+    top: 15%;
+  }
+
+  .seistem2 {
+    width: 20%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    z-index: 999;
+    top: 15%;
+  }
+
+  .seistem3 {
+    width: 20%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    z-index: 999;
+    top: 15%;
+  }
+
+  .seistem4 {
+    width: 20%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    z-index: 999;
+    top: 15%;
+  }
+
+  .h2-total {
+    font-size: 20px;
+    color: #101010;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+
+
+  }
+
+  .inbut30 {
+    padding: 10px;
+    width: 100%;
+    margin: 5px;
+    font-size: 20px;
+    filter: blur(0.5000px);
+    background: rgba(255, 248, 220, 0);
+    color: #efeded;
+    box-sizing: border-box;
+  }
+
+  .inbut80 {
+    padding: 10px;
+    width: 100%;
+    margin: 5px;
+    font-size: 20px;
+    filter: blur(0.5000px);
+    background: rgba(255, 248, 220, 0);
+    color: #efeded;
+    box-sizing: border-box;
+  }
+
+  .inbut30::placeholder,
+  .inbut80::placeholder {
+    color: rgb(255, 255, 255);
+  }
+
+
+  .inbut30:focus,
+  .inbut80:focus {
+    outline: none;
+    border-color: #797575;
+    box-shadow: 0 0 0 2px rgba(173, 176, 178, 0.3);
+  }
+
+  .btn-total {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 12px;
+    cursor: pointer;
+    color: rgb(246, 249, 246);
+    background: #ec0a0a04;
+    border-radius: 15px;
+    font-size: 22px;
+    border: 1px solid rgb(255, 253, 253);
+    background-color: #0e0d0d00;
+    transition: transform 0.3s ease;
+
+
+  }
+
+  .btn-total:hover {
+    background-color: #1ca5c7a7;
+    transform: scale(1.1);
+
+  }
+
+  .result {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(228, 231, 228);
+  }

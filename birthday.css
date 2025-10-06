@@ -1,0 +1,193 @@
+#birthday {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  text-align: center;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 60%;
+  height: 100vh;
+  box-sizing: border-box;
+  gap: 10px;
+
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .glass {
+  position: relative;
+  width: 180px;
+  height: 200px;
+  background: linear-gradient(#fff2, transparent);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 25px 25px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  border-radius: 10px;
+  margin: 0 -45px;
+  backdrop-filter: blur(10px);
+  transform: rotate(calc(var(--r) * 1deg));
+}
+
+.container:hover .glass {
+  transform: rotate(0deg);
+  margin: 0 10px;
+}
+
+.container .glass::before {
+  content: attr(data-text);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.05);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.container .glass svg {
+  font-size: 2.5em;
+  fill: #fff;
+}
+
+.tranfer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100vh;
+
+}
+
+.calculator {
+  position: absolute;
+  top: 150px;
+  width: 100%;
+  height: 50vh;
+  gap: 10px;
+  padding: 10px 20xp;
+
+}
+
+.clilck-button {
+  width: 100%;
+  height: 20vh;
+  position: absolute;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 500px;
+}
+
+.btn-happy {
+  bottom: 50px;
+  position: absolute;
+  width: 100%;
+  padding: 14px 28px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #0fa7ffeb;
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
+
+}
+
+
+.btn-happy:hover {
+  transform: scale(1.05);
+  background-color: #0fa7ff95;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.People {
+  font-size: 30px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #fff;
+}
+
+#numberInput {
+  padding: 10px;
+  width: 100%;
+  margin: 5px;
+  font-size: 20px;
+  filter: blur(0.5000px);
+  background: rgba(255, 248, 220, 0);
+  color: #efeded;
+  box-sizing: border-box;
+}
+
+#button-people {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  cursor: pointer;
+  background-color: #0fa7ff2b;
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(70, 203, 210, 0.1);
+  transition: all 0.5s ease;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  flex-wrap: wrap;
+  padding: 15px 0;
+  width: 100%;
+}
+
+#button-people:hover {
+  background-color: #0fa7ff79;
+}
+
+#numberInput::placeholder {
+  color: #efeded;
+}
+
+
+.marquee-box {
+  position: absolute;
+  display: flex;
+  text-align: center;
+  font-family: "Marhey", sans-serif;
+
+  left: 50%;
+  transform: translateX(100%);
+
+  overflow: hidden;
+  white-space: nowrap;
+  color: #e3eaec;
+  z-index: 50;
+}
+
+.marquee-box:hover {
+  border-radius: 50px;
+}
+
+.marquee-text {
+  /* display: inline-block; */
+
+  animation: marquee 50s linear infinite;
+  font-size: 30px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+@keyframes marquee-box {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}

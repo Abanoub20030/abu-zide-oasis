@@ -1,0 +1,40 @@
+.video-continer {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.video-container video {
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;    
+}
+.video-slide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none;
+  z-index: 1;
+}
+.title {
+position: fixed;
+display: flex;
+text-align: center;
+justify-content: center;
+ color:blue ;
+ align-items: center;
+z-index: 10;
+padding: 1px;
+width:100%;
+height: 100%;
+font-size: 20px;
+
+ /* margin-left: 50%; */
+
+ 
+
+}
